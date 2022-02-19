@@ -1,0 +1,26 @@
+### get all product
+GET http://localhost:5000/products
+
+### get product by id
+GET http://localhost:5000/products/2
+
+### delete product by id
+DELETE http://localhost:5000/products/1
+
+### create a product
+POST http://localhost:5000/products
+Content-Type: application/json
+
+{
+    "item": "hamburger",
+    "stock": 20
+}
+
+### update a product
+PUT http://localhost:5000/products/1
+Content-Type: application/json
+
+{
+    "item": "vodka",
+    "stock": 20
+}
